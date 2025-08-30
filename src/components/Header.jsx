@@ -182,7 +182,7 @@ function NavArea( {page, setPage}) {
         {/*<a className={blogsStyle} onClick={() => setPage("blog")}><MdOutlineForum/>Blog</a> */}
       </nav>
       <nav className='nav'>
-        <a className="navLink" href="../../public/CV.pdf" download="CV-Dylan-Reid"><FaFileDownload/>CV</a>
+        <a className="navLink" href="./public/CV.pdf" download="CV-Dylan-Reid"><FaFileDownload/>CV</a>
         <a className="navLink" href="https://github.com/TheAlgorMortis" target="_blank" rel="noopener noreferrer"><FaGithub/>Github</a>
         <a className="navLink" href="https://www.linkedin.com/in/dylan-james-reid/" target="_blank" rel="noopener noreferrer"><FaLinkedin/>Linkedin</a>
         <a className="navLink" href="https://ddylanrreid.wixsite.com/my-site" target="_blank" rel="noopener noreferrer"><FaBook/>My Writing</a>

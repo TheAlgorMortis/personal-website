@@ -85,7 +85,7 @@ export default function Education() {
         <p>I attended Fairmont High School, where I was first exposed to software development through Information Technology. From then, I always knew I was going to study software engineering.</p>
         <p>I came 7th place in my school for my matric result with an average of 88,4%. I was awarded academic honours in Gr 12 and 11, and academic colours in Gr 10. My marks are shown below.</p>
         </div>
-        <a className="outerButton" href="../../public/NSC.pdf" download="NSC-Dylan-Reid"><h2><FaFileDownload/></h2><h2> Download my NSC </h2></a>
+        <a className="outerButton" href="./public/NSC.pdf" download="NSC-Dylan-Reid"><h2><FaFileDownload/></h2><h2> Download my NSC </h2></a>
         <NscMarks marks={fullMarks.NSC} />
     </>
   )
