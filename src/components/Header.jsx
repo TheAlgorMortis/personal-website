@@ -147,7 +147,6 @@ function ProfilePic( {username, profilePic, updatePic}) {
   return (
     <div className="userArea">
       <img src={toUrl(profilePic)} className="profilePic"/>
-      {username!=="" && (<ImageButton className="userButton" caption="Select" setFunc={updatePic} icon={(<AiOutlineUpload/>)}/>)}
     </div>
   )
 }
