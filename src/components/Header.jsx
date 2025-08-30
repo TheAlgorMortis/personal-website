@@ -13,6 +13,8 @@ import { IoIosHome } from "react-icons/io";
 import { AiOutlineUpload } from "react-icons/ai";
 import { FaFileDownload, FaGithub, FaBook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
+import { FaCode } from "react-icons/fa";
+import { FaKeyboard } from "react-icons/fa";
 
 /* Components */
 import ImageButton from './ImageButton.jsx';
@@ -87,19 +89,14 @@ export default function Header( {page, setPage, username, setUsername}) {
       <div className="mobileHeader">
         <div className="mobileTaskbar">
           <ProfilePic username={username} profilePic={profilePic} updatePic={updatePic}/>
+          <ProfileArea username={username} profile={profile} updatePlans={updatePlans} updateInterests={updateInterests}/>
           <div className='mobileTaskbar'>
-            <button className="userButton" onClick={()=>setMobileNav("profile")}>Profile</button>
-            <button className="userButton" onClick={()=>setMobileNav("nav")}><GiHamburgerMenu/></button>
+            <button className="burger" onClick={()=>setMobileNav("nav")}><h1><GiHamburgerMenu/></h1></button>
           </div>
         </div>
         {mobileNav &&
         (
           <>
-            {mobileNav==="profile" && (
-              <div className="sectionBlock">
-                <ProfileArea username={username} profile={profile} updatePlans={updatePlans} updateInterests={updateInterests}/>
-              </div>
-            )}
             {mobileNav==="nav" && (
               <div className="mobileNavBlock">
                 <NavArea page={page} setPage={mobileSetPage} />
@@ -119,45 +116,16 @@ export default function Header( {page, setPage, username, setUsername}) {
  *
  * @component
  *
- * @param {Object} props
- * @param {String} props.username - username for logged in user.
- * @param {Object} props.profile - profile information
- * @param {Function} props.updatePlans - function to update the plans after
- * graduation information
- * @param {Function} props.updateInterests - function to update the interests
- * information
- *
  * @returns {JSX.Element} The rendered profile area component.
  */
-function ProfileArea( {username, profile, updatePlans, updateInterests}) {
-  /* Render profile info dependent on whether it can be edited or not */
-  let profileArea
-  let editable, className;
-  if (username === "Algor") {
-    editable = true;
-    className = "profileInfoEditable"
-  } else {
-    editable = false;
-    className = "profileInfo"
-  }
-
-  profileArea = (
-    <div className="headerInfo">
-      <div>
-        <h2 className="infoCaption"><SiGodotengine/> Interests </h2>
-        <p className={className} contentEditable={editable} suppressContentEditableWarning onInput={updateInterests}>{profile.interests}</p>
-      </div>
-      <div>
-        <h2 className="infoCaption"><HiAcademicCap/> Plans after graduation </h2>
-        <p className={className} contentEditable={editable} suppressContentEditableWarning onInput={updatePlans}>{profile.plans}</p>
-      </div>
-    </div>
-  )
-
+function ProfileArea() {
   return (
-    <>
-      {profileArea}
-    </>
+    <div className="headerInfo">
+      <h1 className="infoCaption">Dylan James Reid </h1>
+      <h3 className="infoCaptionSub"> <FaCode/>Software Engineer</h3>
+      <h3 className="infoCaptionSub"> <SiGodotengine/>Game Developer</h3>
+      <h3 className="infoCaptionSub"> <FaKeyboard/>Creative Writer </h3>
+    </div>
   )
 }
 
@@ -212,7 +180,7 @@ function NavArea( {page, setPage}) {
         <a className={homeStyle} onClick={() => setPage("home")}><IoIosHome/> Home</a>
         <a className={educationStyle} onClick={() => setPage("education")}><HiAcademicCap /> Education</a>
         <a className={skillsStyle} onClick={() => setPage("skills")}><LuKeyboard/> Skills/Experience</a>
-        <a className={blogsStyle} onClick={() => setPage("blog")}><MdOutlineForum/>Blog</a>
+        {/*<a className={blogsStyle} onClick={() => setPage("blog")}><MdOutlineForum/>Blog</a> */}
       </nav>
       <nav className='nav'>
         <a className="navLink" href="../../public/CV.pdf" download="CV-Dylan-Reid"><FaFileDownload/>CV</a>
@@ -230,40 +198,12 @@ function NavArea( {page, setPage}) {
  *
  * @component
  *
- * @param {Object} props
- * @param {String} props.username - The name of the currently logged in user
- * @param {Function} props.setUsername - The function to call when the username
- * changes (used here for logging out)
- * @param {Function} props.setPage - Used to navigate to the login page
- * selected
- *
  * @returns {JSX.Element} The rendered userArea component
  */
-function UserArea( {username, setUsername, setPage} ) {
-
-  /**
-   * Logs out the user.
-   */
-  const logout = () => {
-    setUsername("");
-    setPage("home");
-  }
-
-  if (username=='') {
-    return (
-      <div className="userArea">
-        <button className="userButton" onClick={() => setPage("login")}><GrLogin /> Login</button>
-        <p>Not logged in</p>
-        <button className="userButton" onClick={()=>{document.documentElement.classList.toggle("light")}}><GrActions /> Mode</button>
-      </div>
-    );
-  } else {
-    return (
-      <div className="userArea">
-        <button className="userButton" onClick={logout}><GrLogout /> Logout</button>
-        <p>Logged in as {username}</p>
-        <button className="userButton" onClick={()=>{document.documentElement.classList.toggle("light")}}><GrActions /> Mode</button>
-      </div>
-    )
-  }
+function UserArea() {
+  return (
+    <div className="userArea">
+      <button className="userButton" onClick={()=>{document.documentElement.classList.toggle("light")}}><GrActions /> Mode</button>
+    </div>
+  )
 }

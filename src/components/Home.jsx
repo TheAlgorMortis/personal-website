@@ -5,6 +5,8 @@ import { RiRobot3Fill } from "react-icons/ri";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { GrLogin } from "react-icons/gr";
 import { FaRegUser } from "react-icons/fa";
+import { SiGodotengine } from "react-icons/si";
+import { HiAcademicCap } from "react-icons/hi2";
 
 /**
  * The home component for the Dylan Reid Personal website.
@@ -18,13 +20,16 @@ export default function Home() {
     <>
       <h1 className="sectionHeading">Welcome to Dylan Reid's personal website!<RiRobot3Fill/></h1>
         <div className="sectionBlock">
-          <h2 className="sectionBlockHeading">About Me<FaRegUser/></h2>
+          <h2 className="sectionBlockHeading">Who Am I?<FaRegUser/></h2>
           <p>I am a passionate creator, whether it be through developing software, writing novels, or producing video games. I am constantly learning new skills, which I intend to use with my out-of-the-box thinking to solve real world problems. I strive to create media and tools that will aid or entertain others. I am enthusiastic, buoyant, and optimistic, with relentless determination and ambition. I am reliable and responsible, and I care deeply about others. I aim to work towards a green and progressive future. </p>
         </div>
         <div className="sectionBlock">
-          <h2 className="sectionBlockHeading">Log In<GrLogin/></h2>
-          <p> For editing rights, click on Login. You will then be able to edit the profile picture and information above, and also create and edit blogs on the blog page. (Hint for the markers: use Username "Algor" and password "0000".)</p>
+          <h2 className="sectionBlockHeading">Plans after graduation<HiAcademicCap/></h2>
+          <p>
+            After finishing my undergraduate degree, I will be studying my honours in Computer Science. After that, I will be working as a Software Engineer at Investec Bank.
+          </p>
         </div>
+      <h1 className="sectionHeading">Navigating the site</h1>
         <div className="sectionBlock">
           <h2 className="sectionBlockHeading">Explore my world<TiWorld/></h2>
           <p>Use the navigation tab above to check my Education and Skills/Experience. You can also visit the blog page to hear my thoughts on things.</p>
