@@ -238,9 +238,12 @@
     font-weight: 900;
     transition: background 0.2s, transform 0.1s;
     cursor: pointer;
+    padding-top: 0.4rem;
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .burger:hover {

@@ -9,14 +9,14 @@
       { "item": "Git", "timeframe": "Since 2023", "body": "Comfortable with git.", "linkCaption": "", "link": "", "icon": "GIT" },
       { "item": "Build Tools, CI/CD", "timeframe": "Since 2025", "body": "Familiar with build tools like Make and Maven. Familiar with setting up CI/CD pipelines.", "linkCaption": "", "link": "", "icon": "C" },
       { "item": "Godot 4", "timeframe": "Since 2024", "body": "Primary tool I use for game dev.", "linkCaption": "", "link": "", "icon": "GODOT" },
-      { "item": "Pixel Art Animation", "timeframe": "Since 2024", "body": "Familiar with tools like Krita and Aseprite. I frequently use Aseprite for book marketing and game dev.", "linkCaption": "Book Marketing insta", "link": "https://www.instagram.com/scifidylanreid/", "icon":"PIX" },
+      { "item": "Pixel Art Animation", "timeframe": "Since 2024", "body": "Familiar with tools like Krita and Aseprite. I frequently use Aseprite for book marketing and game dev.", "linkCaption": "Book Marketing Insta", "link": "https://www.instagram.com/scifidylanreid/", "icon":"PIX" },
       { "item": "Video Editing", "timeframe": "Since 2016", "body": "Familiar with tools like Movavi and CapCut. I frequently use CapCut for book marketing.", "linkCaption": "", "link": "", "icon":"FaVideo" }
     ],
     "Soft Skills": [
       { "item": "Teamwork", "timeframe": "", "body": "", "linkCaption": "", "link": "", "icon": "TEAMWORK" },
       { "item": "Time-management", "timeframe": "", "body": "", "linkCaption": "", "link": "", "icon": "TM" },
       { "item": "Adaptability", "timeframe": "", "body": "", "linkCaption": "", "link": "", "icon": "ADAPT" },
-      { "item": "Critical thinking", "timeframe": "", "body": "", "linkCaption": "", "link": "", "icon": "CT" },
+      { "item": "Critical Thinking", "timeframe": "", "body": "", "linkCaption": "", "link": "", "icon": "CT" },
       { "item": "Inclusivity", "timeframe": "", "body": "", "linkCaption": "", "link": "", "icon": "INCL" },
       { "item": "Resourcefulness", "timeframe": "", "body": "", "linkCaption": "", "link": "", "icon": "RESOURCE" },
       { "item": "Leadership", "timeframe": "", "body": "", "linkCaption": "", "link": "", "icon": "LEADERSHIP" }
@@ -24,9 +24,9 @@
   },
   "Experience": {
     "Personal Tech Experience": [
-      { "item": "Investec Tech Scholarship mentorships", "timeframe": "2024-present", "body": "At the end of my first year I was awarded a full cost scholarship with Investec which has funded me since my second year. After my honours, I will then be able to go work for them. During the scholarship I have networked with many people at the company and have learned a lot about industry from them.", "linkCaption": "", "link": "", "icon": "INVEST" },
-      { "item": "Standard bank hackathon", "timeframe": "2023", "body": "Performed behavioural segmentation on taxi drivers.", "linkCaption": "", "link": "", "icon": "TAXI" },
-      { "item": "Godot 4 game 'Collabyrinth'", "timeframe": "2024-present", "body": "I built a maze game in Godot 4. Check the README in the repo linked below.", "linkCaption": "Github", "link": "https://github.com/TheAlgorMortis/Collabyrinth", "icon": "GODOT" }
+      { "item": "Investec Tech Mentorship", "timeframe": "2024-present", "body": "At the end of my first year I was awarded a full cost scholarship with Investec which has funded me since my second year. After my honours, I will then be able to go work for them. During the scholarship I have networked with many people at the company and have learned a lot about industry from them.", "linkCaption": "", "link": "", "icon": "INVEST" },
+      { "item": "Standard Bank Hackathon", "timeframe": "2023", "body": "Performed behavioural segmentation on taxi drivers.", "linkCaption": "", "link": "", "icon": "TAXI" },
+      { "item": "Godot 4 Game 'Collabyrinth'", "timeframe": "2024-present", "body": "I built a maze game in Godot 4. Check the README in the repo linked below.", "linkCaption": "Github", "link": "https://github.com/TheAlgorMortis/Collabyrinth", "icon": "GODOT" }
     ],
     "University Projects": [
       { "item": "Personal Website using React", "timeframe": "2025", "body": "This is the website you're looking at now.", "linkCaption": "", "link": "", "icon": "TS" },
@@ -46,7 +46,7 @@
     "Leadership Roles": [
       { "item": "Chairperson of Wildlife Society at Fairmont High", "timeframe": "2021", "body": "In this role, I organized events like guest speakers, cleanups, and excursions for the society. During this time I designed a logo for fabric bags that we sold to promote fabric bags over plastic. I also ran an ecobrick campaign where we as a society made and collected about 30 ecobricks that were donated to the cause.", "linkCaption": "", "link": "", "icon": "WILDLIFE" },
       { "item": "Chairperson of Media Appreciation Society at Fairmont High", "timeframe": "2021", "body": "My main endeavor in this role was to put together a video to promote the society. I was the society's first chairperson after it was born through the merging of multiple other societies, including the grapevine, a school magazine that I wrote for 4 times a year.", "linkCaption": "", "link": "", "icon": "MEDIA" },
-      { "item": "Co-writer and Director of a one-act play at Fairmont High", "timeframe": "2022", "body": "I co-wrote and directed a 20-minute comedy play called 'Erase and Rewind' about a man who goes back in time to have reverse-hand-dryers removed from his childhood school, to prevent his life from being ruined. During his adventure, he loses his time machine, which appears like a tv remote. Two children find it and cause chaos with it, like pausing time, changing the languages of their friends, and reversing time. We won a silver award for it at a ceremony called 'Silwervaring Kunstefees.'", "linkCaption": "", "link": "", "icon": "ART" }
+      { "item": "Co-writer and Director of a One Act Play at Fairmont High", "timeframe": "2022", "body": "I co-wrote and directed a 20-minute comedy play called 'Erase and Rewind' about a man who goes back in time to have reverse-hand-dryers removed from his childhood school, to prevent his life from being ruined. During his adventure, he loses his time machine, which appears like a tv remote. Two children find it and cause chaos with it, like pausing time, changing the languages of their friends, and reversing time. We won a silver award for it at a ceremony called 'Silwervaring Kunstefees.'", "linkCaption": "", "link": "", "icon": "ART" }
     ]
   }
 }
