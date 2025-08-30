@@ -111,7 +111,7 @@ function SectionList( {name, skills} ) {
     <div className="sectionBlock">
       <h3 className="sectionBlockHeading">{name}</h3>
       <div className="skillSet">
-        {skills.map(skill => (<SkillBlock skill={skill}/>))}
+        {skills.map(skill => (<SkillBlock key={skill.item} skill={skill}/>))}
       </div>
     </div>
   )
