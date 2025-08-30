@@ -420,4 +420,12 @@
   .semesterGroup {
     flex-direction: column;
   }
+
+  .sectionHeading {
+    font-size: 1.4rem;
+  }
+
+  .sectionSubHeading {
+    font-size: 1.2rem;
+  }
 }
