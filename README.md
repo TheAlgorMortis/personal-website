@@ -8,15 +8,9 @@ The website features dark mode, responsive design, links to other sites, and a
 button to download my CV.
 
 
-## Use of AI
-
-I used chatGPT to help me better understand concepts of html, css, javascript
-and React, since this was my first time learning it.
-
 ## Directory structure
 
 ```
-27163229-rw343-project1/
 personal-website/                   # all source code lives here
 ├── README.md           # This file
 ├── Makefile            # The makefile will add this
@@ -51,14 +45,12 @@ personal-website/                   # all source code lives here
 ```
 
 
-## Project Setup
+## Project Setup for local testing
 
 ### Prerequisites
 - Node.js (LTS) and npm installed on Ubuntu.
 
 ### Commands
-Note that you must be in the Code directory to use the following commands.
-
 - `make install` — installs dependencies.
 - `make dev` — starts the Vite dev server at http://localhost:5173.
 - `make build` — builds the production bundle to `dist/`.
