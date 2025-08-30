@@ -1,16 +1,16 @@
 {
   "Skills": {
     "Technical Skills": [
-      { "item": "Python", "timeframe": "Since 2023", "body": "Familiar with Flask. Can use for development and data engineering in Jupyter. Familiar with numpy, scipy, pandas, sklearn, and more", "linkCaption": "", "link": "", "icon": "PYTHON" },
+      { "item": "Python", "timeframe": "Since 2023", "body": "Familiar with Flask. Can use for development and data engineering in Jupyter. Familiar with numpy, scipy, pandas, sklearn, and more.", "linkCaption": "", "link": "", "icon": "PYTHON" },
       { "item": "Java", "timeframe": "Since 2024", "body": "The language in which I've done the most development. I love OOP.", "linkCaption": "", "link": "", "icon": "JAVA" },
-      { "item": "HTML, CSS, JavaScript/TypeScript with React, and React Native", "timeframe": "Since 2025", "body": "Able to make aesthetially pleasing websites and mobile apps", "linkCaption": "", "link": "", "icon": "TS" },
-      { "item": "C", "timeframe": "Since 2024", "body": "Used to build a compiler, job scheduler, and Othello engine. See University projects for more", "linkCaption": "", "link": "", "icon": "C" },
-      { "item": "Agile", "timeframe": "Since 2025", "body": "Familiar with the agile process. I acted as scrum-master during our third year software engineering project.", "linkCaption": "", "link": "", "icon": "TM" },
+      { "item": "HTML, CSS, JavaScript/TypeScript with React, and React Native", "timeframe": "Since 2025", "body": "Able to make aesthetically pleasing websites and mobile apps", "linkCaption": "", "link": "", "icon": "TS" },
+      { "item": "C", "timeframe": "Since 2024", "body": "Used to build a compiler, job scheduler, and Othello engine. See University projects for more.", "linkCaption": "", "link": "", "icon": "C" },
+      { "item": "Agile", "timeframe": "Since 2025", "body": "Familiar with the Agile process. I acted as scrum-master during our third year software engineering project.", "linkCaption": "", "link": "", "icon": "TM" },
       { "item": "Git", "timeframe": "Since 2023", "body": "Comfortable with git", "linkCaption": "", "link": "", "icon": "GIT" },
       { "item": "Build Tools, CI/CD", "timeframe": "Since 2025", "body": "Familiar with build tools like Make and Maven. Familiar with setting up CI/CD pipelines.", "linkCaption": "", "link": "", "icon": "C" },
-      { "item": "Godot 4", "timeframe": "Since 2024", "body": "Primary tool I use for gamedev.", "linkCaption": "", "link": "", "icon": "GODOT" },
+      { "item": "Godot 4", "timeframe": "Since 2024", "body": "Primary tool I use for game dev.", "linkCaption": "", "link": "", "icon": "GODOT" },
       { "item": "Pixel Art Animation", "timeframe": "Since 2024", "body": "Familiar with tools like Krita and Aseprite. I frequently use Aseprite for book marketing and game dev.", "linkCaption": "Book Marketing insta", "link": "https://www.instagram.com/scifidylanreid/", "icon":"PIX" },
-      { "item": "Video Editing", "timeframe": "Since 2016", "body": "Familiar with tools like Movavi and CapCut. I frequently use Capcut for book marketing.", "linkCaption": "", "link": "", "icon":"FaVideo" }
+      { "item": "Video Editing", "timeframe": "Since 2016", "body": "Familiar with tools like Movavi and CapCut. I frequently use CapCut for book marketing.", "linkCaption": "", "link": "", "icon":"FaVideo" }
     ],
     "Soft Skills": [
       { "item": "Teamwork", "timeframe": "", "body": "", "linkCaption": "", "link": "", "icon": "TEAMWORK" },
@@ -26,16 +26,16 @@
     "Personal Tech Experience": [
       { "item": "Investec Tech Scholarship mentorships", "timeframe": "2024-present", "body": "At the end of my first year I was awarded a full cost scholarship with Investec which has funded me since my second year. After my honours, I will then be able to go work for them. During the scholarship I have networked with many people at the company and have learned a lot about industry from them.", "linkCaption": "", "link": "", "icon": "INVEST" },
       { "item": "Standard bank hackathon", "timeframe": "2023", "body": "Performed behavioural segmentation on taxi drivers", "linkCaption": "", "link": "", "icon": "TAXI" },
-      { "item": "Godot 4 game 'Collabyrinth'", "timeframe": "2024-present", "body": "I built a maze game in Godot 4. Check the README via the link below", "linkCaption": "Github", "link": "https://github.com/TheAlgorMortis/Collabyrinth", "icon": "GODOT" }
+      { "item": "Godot 4 game 'Collabyrinth'", "timeframe": "2024-present", "body": "I built a maze game in Godot 4. Check the README in the repo linked below.", "linkCaption": "Github", "link": "https://github.com/TheAlgorMortis/Collabyrinth", "icon": "GODOT" }
     ],
     "University Projects": [
-      { "item": "Personal Website using React", "timeframe": "2025", "body": "This is the website you're looking at now!", "linkCaption": "", "link": "", "icon": "TS" },
-      { "item": "Fullstack mobile dev project", "timeframe": "2025", "body": "A tinder-style game used for a group of people to decide what to watch. Each player swipes on movies until all players agree. Players are authorized using Plex OAuth, and movie data is pulled from plex", "linkCaption": "", "link": "", "icon": "MOVIE" },
-      { "item": "Othello game engine", "timeframe": "2025", "body": "Parallel search negamax algorithm in C using MPI", "linkCaption": "", "link": "", "icon": "BOARD" },
-      { "item": "Networking projects in Java", "timeframe": "2025", "body": "Chatroom, VoIP, file transfer and torrent", "linkCaption": "", "link": "", "icon": "JAVA" },
+      { "item": "Personal Website using React", "timeframe": "2025", "body": "This is the website you're looking at now.", "linkCaption": "", "link": "", "icon": "TS" },
+      { "item": "Fullstack mobile dev project", "timeframe": "2025", "body": "A tinder-style game used for a group of people to decide what to watch. Each player swipes on movies until all players agree. Players are authorized using Plex OAuth, and movie data is pulled from plex.", "linkCaption": "", "link": "", "icon": "MOVIE" },
+      { "item": "Othello game engine", "timeframe": "2025", "body": "Parallel search negamax algorithm in C using MPI.", "linkCaption": "", "link": "", "icon": "BOARD" },
+      { "item": "Networking projects in Java", "timeframe": "2025", "body": "Chatroom, VoIP, file transfer and torrent.", "linkCaption": "", "link": "", "icon": "JAVA" },
       { "item": "Job scheduler", "timeframe": "2025", "body": "In C using openMP", "linkCaption": "", "link": "", "icon": "C" },
       { "item": "Machine learning algorithms", "timeframe": "2025", "body": "Various algorithms implemented in jupyter with python, including Naive Bayes classifier, Logistic regression, Principal compoent analysis, Linear discriminant analysis, The EM algorithm, Gaussian Mixture Models, and Hidden Markov Models.", "linkCaption": "", "link": "", "icon": "JUPYTER" },
-      { "item": "LL(1) Compiler", "timeframe": "2024", "body": "Compiler implemented in C for a language called SIMPL. Included scanner, parser, typechecking, and codeGen", "linkCaption": "", "link": "", "icon": "C" },
+      { "item": "LL(1) Compiler", "timeframe": "2024", "body": "Compiler implemented in C for a language called SIMPL. Included scanner, parser, typechecking, and codeGen.", "linkCaption": "", "link": "", "icon": "C" },
       { "item": "Braille translator", "timeframe": "2024", "body": "Java Afrikaans to Braille translater", "linkCaption": "", "link": "", "icon": "JAVA" },
       { "item": "Air race and Obstacle Chess games", "timeframe": "2023", "body": "Games made in python, both with primative GUIs", "linkCaption": "", "link": "", "icon": "PYTHON" }
     ],
