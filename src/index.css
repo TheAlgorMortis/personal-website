@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Dark mode colours */
+:root {
+  /* --bg-color: #09f; */
+  --bg-color: rgba(0, 0, 10, 0.85);
+  --fg-color: #ddddff;
+  --fg-hover: #000000;
+  --border-color: #0040a7;
+  --btn-border: #880088;
+  --btn-color: #00008f;
+  --btn-hover: #990055;
+  --nav-selected: #f00080;
+  --nav-btn-color: #550055;
+  --section-heading: rgba(100, 0, 100, 0.5);
+  --section-subheading: rgba(25, 20, 80, 0.8);
+  --skill-color: rgba(150, 00, 150, 0.5);
+}
+
+/** Light mode colours */
+:root.light {
+  /* --bg-color: #09f; */
+  --bg-color: rgba(0, 253, 255, 0.85);
+  --fg-color: #000000;
+  --fg-hover: #ffffff;
+  --border-color: #990099;
+  --btn-border: #b90000;
+  --btn-color: #ff9f00;
+  --btn-hover: #ffff00;
+  --nav-selected: #9966ff;
+  --nav-btn-color: #00f0ff;
+  /* opacity with #9966ff; */
+  --section-heading: rgba(153, 102, 255, 0.8);
+  --section-subheading: rgba(00, 150, 255, 0.8);
+  --skill-color: rgba(253, 00, 253, 0.6);
+}
+
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: var(--line-height);
+  background-color: var(--color-bg);
+}

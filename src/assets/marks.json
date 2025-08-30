@@ -1,0 +1,41 @@
+{"year1sem1":
+	[{"id": 0, "name": "CompSci 114 (Introductory)", "mark": "89%", "icon":"CS1"},
+	 {"id": 1, "name": "Maths 114 (Prealc and Calc I)", "mark": "87%", "icon":"M"},
+	 {"id": 2, "name": "Probability Theory and Statistics", "mark": "91%", "icon":"PTS"},
+	 {"id": 3, "name": "Physics 114", "mark": "81%", "icon":"PHY"}],
+ "year1sem2":
+	[{"id": 5, "name": "CompSci 144 (OOP)", "mark": "92%", "icon":"CS1"},
+	 {"id": 6, "name": "Maths 144 (Calc II and Linear algebra)", "mark": "91%", "icon":"M"},
+	 {"id": 7, "name": "Data Science 141", "mark": "87%", "icon":"DS1"},
+	 {"id": 8, "name": "Applied Maths 144 (Vectors and Mechanics)", "mark": "73%","icon":"AM1"},
+	 {"id": 9, "name": "Science in context 178", "mark": "84%", "icon":"SIC"}],
+"year2sem1":
+	[{"id": 10, "name": "CompSci 214 (Data structures / algorithms)", "mark": "84%", "icon":"DSA"},
+	 {"id": 11, "name": "Maths 214 (Calc III and Linear Algebra)", "mark": "93%", "icon":"M"},
+	 {"id": 12, "name": "MathStats 214", "mark": "70%", "icon":"MS"},
+	 {"id": 13, "name": "Applied Maths 214 (Applied Matrix methods)", "mark":"91%", "icon":"AM2"}],
+"year2sem2":
+	[{"id": 14, "name": "CompSci 244 (Computer Architecture)", "mark": "76%", "icon":"CA"},
+	 {"id": 15, "name": "Maths 244 (Analysis and Linear Algebra)", "mark": "79%", "icon":"M"},
+	 {"id": 301, "name": "MathStats 245", "mark": "50%", "icon":"MS"},
+	 {"id": 16, "name": "MathStats 246", "mark": "61%", "icon":"MS"},
+	 {"id": 17, "name": "Data Science 241", "mark": "75%","icon":"DS2"}],
+"year3sem1":
+	[{"id": 18, "name": "CompSci 313 (Networks)", "mark": "87%", "icon":"NET"},
+	 {"id": 19, "name": "CompSci 314 (Concurrency)", "mark": "76%","icon":"CONC"},
+	 {"id": 20, "name": "CompSci 315 (Machine Learning)", "mark": "71%", "icon":"ML"},
+	 {"id": 21, "name": "Applied Maths 314 (Discrete Maths)", "mark": "83%", "icon":"AMD"}],
+"year3sem2":
+	[{"id": 22, "name": "CompSci 343 (Webdev and Databases)", "mark": "TBA", "icon":"WEB"},
+	 {"id": 23, "name": "CompSci 344 (Software Engineering)", "mark": "TBA", "icon":"SE"},
+	 {"id": 24, "name": "CompSci 345 (Automata and Computability)", "mark": "TBA","icon":"AUTO"},
+	 {"id": 35, "name": "Applied Maths 364 (Fourier Analysis)", "mark":"TBA","icon":"FOU"}],
+"NSC":
+	[{"id": 101, "name": "English Home Language", "mark": "89%","icon":"ENG"},
+	 {"id": 102, "name": "Afrikaans First Additional language", "mark": "86%","icon":"AFR"},
+	 {"id": 103, "name": "Mathematics", "mark": "85%","icon":"PRE"},
+	 {"id": 104, "name": "Life Orientation", "mark": "83%","icon":"LO"},
+	 {"id": 105, "name": "Information Technology", "mark": "95%","icon":"IT"},
+	 {"id": 106, "name": "Life Sciences", "mark": "90%","icon":"BIO"},
+	 {"id": 107, "name": "Physical Sciences", "mark": "91%","icon":"PHY"}]
+}

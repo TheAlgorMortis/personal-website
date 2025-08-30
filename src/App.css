@@ -1,0 +1,43 @@
+/* CSS for the project as a whole */
+
+/* App overall */
+.App {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  background-image: url("./assets/backdrop.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 0.5rem;
+}
+
+/* Header style for overall page */
+.header {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+  background: var(--bg-color, rgba(0, 0, 0, .1));
+}
+
+/* Body style for overall page */
+.body {
+  overflow: auto;
+  overflow-x: hidden;
+  padding: 1rem;
+  width: 70%;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  list-style-position: inside;
+}
+
+@media (max-width: 1080px) {
+  .body {
+    overflow: auto;
+    overflow-x: hidden;
+    width: 100%;
+    padding: 0.5rem 0rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}

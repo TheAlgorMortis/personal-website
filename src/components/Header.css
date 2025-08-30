@@ -1,0 +1,232 @@
+/* Header */
+.header {
+  color: var(--fg-color);
+  background: var(--bg-color);
+  border: 5px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+/********************
+ *    Navigation    *
+ *******************/
+
+/* nav group */
+.nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Shared button look for nav states */
+.navButton,
+.navSelected {
+  color: var(--fg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  padding: 0.5rem 1rem;
+  border: 3px solid var(--border-color);
+  border-radius: 1rem;
+  font-weight: 900;
+  transition: background 0.2s, transform 0.1s, color 0.2s;
+  cursor: pointer;
+}
+
+.navGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navLink {
+  color: var(--fg-color);
+  background: var(--btn-color);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.5rem;
+  border: 3px solid var(--border-color);
+  border-radius: 1rem;
+  font-weight: 900;
+  transition: background 0.2s, transform 0.1s, color 0.2s;
+  cursor: pointer;
+}
+
+.navLink:hover {
+  color: var(--fg-hover);
+  background: var(--border-color);
+}
+
+.navButton {
+  background: var(--nav-btn-color);
+}
+
+.navButton:hover {
+  color: var(--fg-hover);
+  background: var(--border-color);
+}
+
+.navSelected {
+  background: var(--nav-selected);
+}
+
+/********************
+ *    User Area     *
+ *******************/
+.userArea {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.userButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--fg-color);
+  background: var(--btn-color);
+  padding: 0.5rem 1rem;
+  border: 3px solid var(--btn-border);
+  border-radius: 1rem;
+  font-weight: 900;
+  transition: background 0.2s, transform 0.1s;
+  cursor: pointer;
+}
+
+.userButton:hover {
+  background: var(--btn-hover);
+}
+
+/********************
+ *   Profile Info   *
+ *******************/
+.headerInfo {
+  display: flex;
+  gap: 1rem;
+  max-width: 750px;
+}
+
+.infoCaption {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.profileInfoEditable {
+  background: var(--bg-color);
+  border: 5px solid var(--border-color);
+  border-radius: 1rem;
+}
+
+.profilePic {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--border-color);
+}
+
+/********************
+ *  Responsiveness  *
+ *******************/
+
+/* Hidden by default; shown on small screens */
+.mobileHeader {
+  display: none;
+}
+
+/* Small screens */
+@media (max-width: 1080px) {
+  .mobileHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+  }
+
+  .mobileTaskbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .mobileNavBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 100%;
+    color: var(--fg-color);
+    background: var(--bg-color);
+    border: 3px solid var(--border-color);
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    transition: background 0.2s, transform 0.1s;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .desktopHeader {
+    display: none;
+  }
+
+  .nav {
+    flex-direction: column;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navButton {
+    font-weight: 200;
+  }
+
+  .profilePic {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .headerInfo {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0 auto;
+  }
+
+  .userArea {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 1081px) {
+  .desktopHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 1.5rem;
+  }
+
+  .mobileHeader {
+    display: none;
+  }
+}
