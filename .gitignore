@@ -1,5 +1,5 @@
-Code/node_modules
-Code/.pnp
+node_modules
+.pnp
 .pnp.js
 .DS_store
 .env.local
