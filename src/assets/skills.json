@@ -1,52 +1,235 @@
 {
-  "Skills": {
-    "Technical Skills": [
-      { "item": "Python", "timeframe": "Since 2023", "body": "Familiar with Flask. Can use for development and data engineering in Jupyter. Familiar with numpy, scipy, pandas, sklearn, and more.", "linkCaption": "", "link": "", "icon": "PYTHON" },
-      { "item": "Java", "timeframe": "Since 2024", "body": "The language in which I've done the most development. I love OOP.", "linkCaption": "", "link": "", "icon": "JAVA" },
-      { "item": "HTML, CSS, JavaScript/TypeScript with React, and React Native", "timeframe": "Since 2025", "body": "Able to make aesthetically pleasing websites and mobile apps.", "linkCaption": "", "link": "", "icon": "TS" },
-      { "item": "C", "timeframe": "Since 2024", "body": "Used to build a compiler, job scheduler, and Othello engine. See University projects for more.", "linkCaption": "", "link": "", "icon": "C" },
-      { "item": "Agile", "timeframe": "Since 2025", "body": "Familiar with the Agile process. I acted as scrum-master during our third year software engineering project.", "linkCaption": "", "link": "", "icon": "TM" },
-      { "item": "Git", "timeframe": "Since 2023", "body": "Comfortable with git.", "linkCaption": "", "link": "", "icon": "GIT" },
-      { "item": "Build Tools, CI/CD", "timeframe": "Since 2025", "body": "Familiar with build tools like Make and Maven. Familiar with setting up CI/CD pipelines.", "linkCaption": "", "link": "", "icon": "C" },
-      { "item": "Godot 4", "timeframe": "Since 2024", "body": "Primary tool I use for game dev.", "linkCaption": "", "link": "", "icon": "GODOT" },
-      { "item": "Pixel Art Animation", "timeframe": "Since 2024", "body": "Familiar with tools like Krita and Aseprite. I frequently use Aseprite for book marketing and game dev.", "linkCaption": "Book Marketing Insta", "link": "https://www.instagram.com/scifidylanreid/", "icon":"PIX" },
-      { "item": "Video Editing", "timeframe": "Since 2016", "body": "Familiar with tools like Movavi and CapCut. I frequently use CapCut for book marketing.", "linkCaption": "", "link": "", "icon":"FaVideo" }
+  "skills": {
+    "technical": [
+      { "name": "Python",
+        "id":"python",
+        "timeframe": "Since 2023",
+        "brief": "Familiar with Flask. Can use for development and data engineering in Jupyter. Familiar with numpy, scipy, pandas, sklearn, and more.",
+        "icon": "PYTHON" },
+
+      { "name": "Java",
+        "id": "java",
+        "timeframe": "Since 2024",
+        "brief": "Very comfortable in JAVA with lots of experience.",
+        "icon": "JAVA" },
+
+      { "name": "Fullstack technologies",
+        "id": "fullstack",
+        "timeframe": "Since 2025",
+        "brief": "HTML, CSS, JavaScript/TypeScript with React/Express, and React Native. Able to make aesthetically pleasing websites and mobile apps.",
+        "icon": "TS" },
+
+      { "name": "C",
+        "id":"c",
+        "timeframe": "Since 2024",
+        "brief": "Used to build a compiler, job scheduler, and Othello engine.",
+        "icon": "C" },
+
+      { "name": "Agile",
+        "id": "agile",
+        "timeframe": "Since 2025",
+        "brief": "Familiar with the Agile process. I acted as scrum-master during our third year software engineering project.",
+        "icon": "TM" },
+
+      { "name": "Git",
+        "id": "git",
+        "timeframe": "Since 2023",
+        "brief": "Comfortable with git.",
+        "icon": "GIT" },
+
+      { "name": "Build Tools, CI/CD",
+        "id": "build",
+        "timeframe": "Since 2025",
+        "brief": "Familiar with build tools like Make and Maven. Familiar with setting up CI/CD pipelines.",
+        "icon": "C" },
+
+      { "name": "Godot",
+        "id": "godot",
+        "timeframe": "Since 2023",
+        "body": "Primary tool I use for game dev.",
+        "icon": "GODOT" },
+
+      { "name": "Pixel Art Animation",
+        "id": "pixel-art",
+        "timeframe": "Since 2024",
+        "brief": "Familiar with tools like Krita and Aseprite. I frequently use Aseprite for book marketing and game dev.",
+        "icon":"PIX",
+        "points" : [
+          {"name": "Book Marketing Insta",
+           "link": "https://www.instagram.com/scifidylanreid/"
+          }]
+        },
+
+      { "name": "Video Editing",
+        "id": "video-editing",
+        "timeframe": "Since 2016",
+        "brief": "Familiar with tools like Movavi and CapCut. I frequently use CapCut for book marketing.",
+        "icon":"FaVideo" }
     ],
-    "Soft Skills": [
-      { "item": "Teamwork", "timeframe": "", "body": "", "linkCaption": "", "link": "", "icon": "TEAMWORK" },
-      { "item": "Time-management", "timeframe": "", "body": "", "linkCaption": "", "link": "", "icon": "TM" },
-      { "item": "Adaptability", "timeframe": "", "body": "", "linkCaption": "", "link": "", "icon": "ADAPT" },
-      { "item": "Critical Thinking", "timeframe": "", "body": "", "linkCaption": "", "link": "", "icon": "CT" },
-      { "item": "Inclusivity", "timeframe": "", "body": "", "linkCaption": "", "link": "", "icon": "INCL" },
-      { "item": "Resourcefulness", "timeframe": "", "body": "", "linkCaption": "", "link": "", "icon": "RESOURCE" },
-      { "item": "Leadership", "timeframe": "", "body": "", "linkCaption": "", "link": "", "icon": "LEADERSHIP" }
+
+    "soft": [
+      { "name": "Teamwork", "id":"teamwork", "icon": "TEAMWORK" },
+      { "name": "Time-management", "id":"time-management", "icon": "TM" },
+      { "name": "Adaptability", "id": "adaptability", "icon": "ADAPT" },
+      { "name": "Critical Thinking", "id":"critical-thinking", "icon": "CT" },
+      { "name": "Inclusivity", "id":"inclusivity", "icon": "INCL" },
+      { "name": "Resourcefulness", "id": "resourcefulness", "icon": "RESOURCE" },
+      { "name": "Leadership", "id":"leadership", "icon": "LEADERSHIP" }
     ]
   },
-  "Experience": {
-    "Personal Tech Experience": [
-      { "item": "Investec Tech Mentorship", "timeframe": "2024-present", "body": "At the end of my first year I was awarded a full cost scholarship with Investec which has funded me since my second year. After my honours, I will then be able to go work for them. During the scholarship I have networked with many people at the company and have learned a lot about industry from them.", "linkCaption": "", "link": "", "icon": "INVEST" },
-      { "item": "Standard Bank Hackathon", "timeframe": "2023", "body": "Performed behavioural segmentation on taxi drivers.", "linkCaption": "", "link": "", "icon": "TAXI" },
-      { "item": "Godot 4 Game 'Collabyrinth'", "timeframe": "2024-present", "body": "I built a maze game in Godot 4. Check the README in the repo linked below.", "linkCaption": "Github", "link": "https://github.com/TheAlgorMortis/Collabyrinth", "icon": "GODOT" }
+
+  "experience": {
+    "personal-tech-experience": [
+      { "name": "SUDS Hackathon Winners",
+        "id":"suds-hackathon",
+        "timeframe":"3-5 October 2025",
+        "brief": "Winners of the Stellenbosch Developer's Society 2025 Hackathon.",
+        "icon":"NUT",
+        "points":[
+          {"text":"Dylan Swarts and I participated against 7 other teams in the SUDS Hackathon of 2025. The theme was to build something that would improve student life. Swarts and I (as a team called \"Dylan Squared\" since we are both called Dylan) developed a full-stack system called \" Maroonut\", a digitized version of the Stellenbosch University's Faculty yearbook. We built this system over a 38 period period from Friday, 3 October at 20:00 (Right after writing a 3rd year maths exam) to Sunday, 5 October at 10:00. The full implementation and detailed README can be found at Github via the link below."},
+          {"name":"Check out Maroonut on Github", "link":"https://github.com/TheAlgorMortis/suds-hackathon-2025", "icon":"GIT"},
+          {"name":"Check out the website of my teammate, Dylan Swarts", "link":"https://straws11.github.io/", "icon":"TEAMWORK"}
+        ]
+
+      },
+
+      { "name": "Investec Tech Scholarship Mentorship",
+        "id":"investec",
+        "timeframe": "2024-present",
+        "brief": "At the end of my first year I was awarded a full cost scholarship with Investec which has funded me since my second year. After my honours, I will then be able to go work for them. During the scholarship I have networked with many people at the company and have learned a lot about industry from them.",
+        "icon": "INVEST" },
+
+      { "name": "Standard Bank Hackathon",
+        "id": "lab-hackathon",
+        "timeframe": "2023",
+        "brief": "Performed behavioural segmentation on taxi drivers.",
+        "icon": "TAXI" },
+
+      { "name": "Godot Game 'Collabyrinth'",
+        "id":"collabyrinth",
+        "timeframe": "2024-present",
+        "body": "I built a maze game in Godot 4. Check the README in the repo linked below.",
+        "icon":"GODOT",
+        "points":[
+          {"text": "Collabyrinth is a continuous passion-project that I incrementally develop to hone my skills in game-development before I tackle my first ambitious long-term project."},
+          {"name": " Check it out on Github", "link": "https://github.com/TheAlgorMortis/Collabyrinth", "icon": "GODOT" }
+        ]
+      }
     ],
-    "University Projects": [
-      { "item": "Personal Website using React", "timeframe": "2025", "body": "This is the website you're looking at now.", "linkCaption": "", "link": "", "icon": "TS" },
-      { "item": "Fullstack Mobile Dev Project", "timeframe": "2025", "body": "A tinder-style game used for a group of people to decide what to watch. Each player swipes on movies until all players agree. Players are authorized using Plex OAuth, and movie data is pulled from Plex.", "linkCaption": "", "link": "", "icon": "MOVIE" },
-      { "item": "Othello Game Engine", "timeframe": "2025", "body": "Parallel search negamax algorithm in C using MPI.", "linkCaption": "", "link": "", "icon": "BOARD" },
-      { "item": "Networking Projects in Java", "timeframe": "2025", "body": "Chatroom, VoIP, file transfer and torrent.", "linkCaption": "", "link": "", "icon": "JAVA" },
-      { "item": "Job Scheduler", "timeframe": "2025", "body": "In C using openMP.", "linkCaption": "", "link": "", "icon": "C" },
-      { "item": "Machine Learning Algorithms", "timeframe": "2025", "body": "Various algorithms implemented in Jupyter with python, including Naive Bayes classifier, Logistic Regression, Principal Component Analysis, Linear Discriminant Analysis, The EM Algorithm, Gaussian Mixture Models, and Hidden Markov Models.", "linkCaption": "", "link": "", "icon": "JUPYTER" },
-      { "item": "LL(1) Compiler", "timeframe": "2024", "body": "Compiler implemented in C for a language called SIMPL. Included a scanner, parser, type-checking, and code generation.", "linkCaption": "", "link": "", "icon": "C" },
-      { "item": "Braille Translator", "timeframe": "2024", "body": "Java Afrikaans to Braille translater.", "linkCaption": "", "link": "", "icon": "JAVA" },
-      { "item": "Air Race and Obstacle Chess Games", "timeframe": "2023", "body": "Games made in python, both with primative GUIs.", "linkCaption": "", "link": "", "icon": "PYTHON" }
+
+    "university-projects": [
+      { "name": "Brainscraper [Fullstack Webdev]",
+        "id": "brainscraper",
+        "timeframe":"2025",
+        "brief": "A Kahoot-like online mutiplayer trivia game with websockets for real-time syncronization, full JWT + Refresh token Authentication, and some suspenseful music to keep the excitement going",
+        "icon":"TS"
+      },
+
+      { "name": "Ponderr [Fullstack Mobile Dev]",
+        "id": "ponderr",
+        "timeframe": "2025",
+        "brief": "A tinder-style game used for a group of people to decide what to watch. Each player swipes on movies until all players agree. Players are authorized using Plex OAuth, and movie data is pulled from Plex.",
+        "icon": "MOVIE"
+      },
+
+      { "name":"DFA + BPE LLM Tokenizer",
+        "id": "automata-345",
+        "timeframe": "2025",
+        "brief": "An investigative-style project implementing a Tokenizer equivalent to that on minbpe's BasicTokenizer including optimizations, DFA visualtions, and more.",
+        "icon": "BRAIN"
+      },
+
+      { "name": "Personal Website with Typescript and React",
+        "id":"this-is-pretty-meta",
+        "timeframe": "2025 - present",
+        "brief": "This is the website you're looking at now. Originally implemented in Javascript, it has since been adapted to typescript and improved in many ways.",
+        "icon": "TS"
+      },
+
+      { "name": "Othello Game Engine",
+        "id": "othello",
+        "timeframe": "2025",
+        "brief": "Parallel search negamax algorithm in C using MPI.",
+        "icon": "BOARD"
+      },
+
+      { "name": "Networking Projects In Java",
+        "id": "networks",
+        "timeframe": "2025",
+        "brief": "Chatroom, VoIP, file transfer and torrent.",
+        "icon": "JAVA"
+      },
+
+      { "name": "Job Scheduler",
+        "id": "job-scheduler",
+        "timeframe": "2025",
+        "brief": "In C using openMP.",
+        "icon": "C"
+      },
+
+      { "name": "Machine Learning Algorithms",
+        "timeframe": "2025",
+        "brief": "Various algorithms implemented in Jupyter with python, including Naive Bayes classifier, Logistic Regression, Principal Component Analysis, Linear Discriminant Analysis, The EM Algorithm, Gaussian Mixture Models, and Hidden Markov Models.",
+        "icon": "JUPYTER"
+      },
+
+      { "name": "LL(1) Compiler",
+        "id": "compiler",
+        "timeframe": "2024",
+        "brief": "Compiler implemented in C for a language called SIMPL. Included a scanner, parser, type-checking, and code generation.",
+        "icon": "C"
+      },
+
+      { "name": "Braille Translator",
+        "id": "braille-translator",
+        "timeframe": "2024",
+        "brief": "Java Afrikaans to Braille translater.",
+        "icon": "JAVA" },
+
+      { "name": "Air Race and Obstacle Chess Games",
+        "id":"python-games",
+        "timeframe": "2023",
+        "body": "Games made in python, both with primative GUIs.",
+        "icon": "PYTHON" }
     ],
-    "Non-tech Endeavors": [
-      { "item": "Transfer: The Severed System (My Novel)", "timeframe": "2017-present", "body": "I have been working on a novel the past 8 years. I won a Gold Diploma for it in the Cape Town Writing Eisteddfod in 2021. I am working on publishing it. I have also written the first drafts for two sequels, and have plans for other works.", "linkCaption": "Book Website", "link": "https://ddylanrreid.wixsite.com/my-site", "icon": "BOOK" },
-      { "item": "Reptile Park Volunteering", "timeframe": "2019-2020", "body": "I spent some time volunteering at the reptile garden in Stodels, Durbanville. Responsibilities included feeding reptiles, cleaning reptile tanks, sweeping, raking the sand in the rock monitor pits, and helping wherever else needed.", "linkCaption": "", "link": "", "icon": "SNAKE" }
+
+    "non-tech-endeavors": [
+      { "name": "Transfer: The Severed System (My Novel)",
+        "id":"severed-system",
+        "timeframe": "2017-present",
+        "brief": "I have been working on a novel the past 8 years. I won a Gold Diploma for it in the Cape Town Writing Eisteddfod in 2021. I am working on publishing it. I have also written the first drafts for two sequels, and have plans for other works.",
+        "icon":"BOOK",
+        "points": [
+          {"name": "Book Website", "link": "https://ddylanrreid.wixsite.com/my-site", "icon": "BOOK" }
+        ]
+      },
+
+      { "name": "Reptile Park Volunteering",
+        "id":"volunteering",
+        "timeframe": "2019-2020",
+        "brief": "I spent some time volunteering at the reptile garden in Stodels, Durbanville. Responsibilities included feeding reptiles, cleaning reptile tanks, sweeping, raking the sand in the rock monitor pits, and helping wherever else needed.",
+        "icon": "SNAKE" }
     ],
-    "Leadership Roles": [
-      { "item": "Chairperson of Wildlife Society at Fairmont High", "timeframe": "2021", "body": "In this role, I organized events like guest speakers, cleanups, and excursions for the society. During this time I designed a logo for fabric bags that we sold to promote fabric bags over plastic. I also ran an ecobrick campaign where we as a society made and collected about 30 ecobricks that were donated to the cause.", "linkCaption": "", "link": "", "icon": "WILDLIFE" },
-      { "item": "Chairperson of Media Appreciation Society at Fairmont High", "timeframe": "2021", "body": "My main endeavor in this role was to put together a video to promote the society. I was the society's first chairperson after it was born through the merging of multiple other societies, including the grapevine, a school magazine that I wrote for 4 times a year.", "linkCaption": "", "link": "", "icon": "MEDIA" },
-      { "item": "Co-writer and Director of a One Act Play at Fairmont High", "timeframe": "2022", "body": "I co-wrote and directed a 20-minute comedy play called 'Erase and Rewind' about a man who goes back in time to have reverse-hand-dryers removed from his childhood school, to prevent his life from being ruined. During his adventure, he loses his time machine, which appears like a tv remote. Two children find it and cause chaos with it, like pausing time, changing the languages of their friends, and reversing time. We won a silver award for it at a ceremony called 'Silwervaring Kunstefees.'", "linkCaption": "", "link": "", "icon": "ART" }
+
+    "leadership-roles": [
+      { "name": "Chairperson of Wildlife Society at Fairmont High",
+        "id":"wildlife",
+        "timeframe": "2021",
+        "brief": "In this role, I organized events like guest speakers, cleanups, and excursions for the society. During this time I designed a logo for fabric bags that we sold to promote fabric bags over plastic. I also ran an ecobrick campaign where we as a society made and collected about 30 ecobricks that were donated to the cause.",
+        "icon": "WILDLIFE" },
+
+      { "name": "Chairperson of Media Appreciation Society at Fairmont High",
+        "id":"media",
+        "timeframe": "2021",
+        "brief": "My main endeavor in this role was to put together a video to promote the society. I was the society's first chairperson after it was born through the merging of multiple other societies, including the grapevine, a school magazine that I wrote for 4 times a year.",
+        "icon": "MEDIA"
+      },
+
+      { "name": "Co-writer and Director of a One Act Play at Fairmont High",
+        "id":"erase-and-rewind",
+        "timeframe": "2022",
+        "breif": "I co-wrote and directed a 20-minute comedy play called 'Erase and Rewind' about a man who goes back in time to have reverse-hand-dryers removed from his childhood school, to prevent his life from being ruined. During his adventure, he loses his time machine, which appears like a tv remote. Two children find it and cause chaos with it, like pausing time, changing the languages of their friends, and reversing time. We won a silver award for it at a ceremony called 'Silwervaring Kunstefees.'",
+        "icon": "ART" }
     ]
   }
 }
