@@ -15,8 +15,8 @@
 
 /* Header style for overall page */
 .header {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
-  background: var(--bg-color, rgba(0, 0, 0, .1));
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  background: var(--bg-color, rgba(0, 0, 0, 0.1));
 }
 
 /* Body style for overall page */

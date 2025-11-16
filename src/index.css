@@ -8,19 +8,18 @@
 
 /* Dark mode colours */
 :root {
-  /* --bg-color: #09f; */
   --bg-color: rgba(0, 0, 10, 0.85);
   --fg-color: #ddddff;
   --fg-hover: #000000;
   --border-color: #0040a7;
-  --btn-border: #880088;
-  --btn-color: #00008f;
-  --btn-hover: #990055;
-  --nav-selected: #f00080;
-  --nav-btn-color: #550055;
-  --section-heading: rgba(100, 0, 100, 0.85);
-  --section-subheading: rgba(25, 20, 80, 0.8);
-  --skill-color: rgba(150, 00, 150, 0.5);
+  --btn-border: #00a0a7;
+  --btn-color: #3040a7;
+  --btn-hover: #990099;
+  --nav-selected: #480065;
+  --nav-btn-color: #251960;
+  --section-heading: #480065;
+  --section-subheading: #251960;
+  --skill-color: #120535;
 }
 
 /** Light mode colours */
@@ -40,7 +39,6 @@
   --section-subheading: rgba(00, 150, 255, 0.8);
   --skill-color: rgba(253, 00, 253, 0.6);
 }
-
 
 html {
   font-size: 100%;

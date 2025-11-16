@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import skills from "../assets/skills.json";
 import "./Bodies.css";
 import { useParams, useNavigate } from "react-router-dom";
@@ -150,7 +150,7 @@ export default function Skills() {
   // Navigate
   const navigate = useNavigate();
 
-  /**
+  /*
    * Control bar that displays whether you're currently on skills and
    * experience, and gives you a button to switch between the two.
    *
@@ -279,7 +279,11 @@ function Se({ tab, category, skill, expanded }: SeProps) {
       {hasPoints && !expanded && (
         <button
           className="outerButton"
-          onClick={() => navigate(`/skills/${tab}/${category}/${skill.id}`)}
+          onClick={() => {
+            const scroller = document.querySelector(".body");
+            scroller?.scrollTo({ top: 0, behavior: "smooth" });
+            navigate(`/skills/${tab}/${category}/${skill.id}`);
+          }}
         >
           More
         </button>
@@ -346,9 +350,11 @@ function SeLink({ pointLink }: SeLinkProps) {
       ? componentMap[pointLink.icon as keyof typeof componentMap]
       : null;
   return (
-    <div className="sectionBlock">
-      {Icon && <Icon />}
-      <a href={pointLink.link}>{caption}</a>
+    <div>
+      <a href={pointLink.link} className="outerButton">
+        {Icon && <Icon />}
+        {caption}
+      </a>
     </div>
   );
 }

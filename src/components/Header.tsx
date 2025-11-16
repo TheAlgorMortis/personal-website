@@ -77,19 +77,8 @@ function ProfileArea() {
     <div className="headerInfo">
       <h1 className="infoCaption">Dylan James Reid </h1>
       <h3 className="infoCaptionSub">
-        {" "}
         <FaCode />
         Software Engineer
-      </h3>
-      <h3 className="infoCaptionSub">
-        {" "}
-        <SiGodotengine />
-        Game Developer
-      </h3>
-      <h3 className="infoCaptionSub">
-        {" "}
-        <FaKeyboard />
-        Creative Writer{" "}
       </h3>
     </div>
   );
@@ -114,7 +103,7 @@ function NavArea() {
   /* Decide on styles for navigation */
   const isHome = !!useMatch("/home");
   const isEducation = !!useMatch("/education");
-  const isSkills = !!useMatch("/skills");
+  const isSkills = !!useMatch("/skills/*");
 
   const homeStyle = isHome ? "navSelected" : "navButton";
   const educationStyle = isEducation ? "navSelected" : "navButton";
@@ -180,6 +169,7 @@ function UserArea() {
     <div className="userArea">
       <button
         className="userButton"
+        title="Toggle Light and Dark mode"
         onClick={() => {
           document.documentElement.classList.toggle("light");
         }}

@@ -42,7 +42,21 @@ function App() {
               </Route>
             </Route>
 
-            <Route path="*" element={<div>Not found</div>} />
+            {/* Not found */}
+            <Route
+              path="*"
+              element={
+                <div>
+                  <h3 className="sectionHeading">Page not found</h3>
+                  <div className="sectionBlock">
+                    <p>
+                      The page you're looking for does not exit. Please navigate
+                      using the navigation bar at the top of the page.
+                    </p>
+                  </div>
+                </div>
+              }
+            />
           </Routes>
         </div>
       </div>
