@@ -77,14 +77,14 @@ type Marks = {
 export default function Education() {
   return (
     <>
-      <h1 className="sectionHeading">
+      <h2 className="sectionHeading">
         Education <HiAcademicCap />
-      </h1>
-      <h2 className="sectionSubHeading">
-        University <FaUniversity />
       </h2>
+      <h3 className="sectionSubHeading">
+        University <FaUniversity />
+      </h3>
       <div className="sectionBlock">
-        <h3 className="sectionBlockHeading">University Experience</h3>
+        <h4 className="sectionBlockHeading">University Experience</h4>
         <p>
           I am attending Stellenbosch University and am currently studying the
           third year of my BSc Computer Science degree. Here, I have learned
@@ -114,11 +114,11 @@ export default function Education() {
         marks1={fullMarks.year1sem1}
         marks2={fullMarks.year1sem2}
       />
-      <h2 className="sectionSubHeading">
+      <h3 className="sectionSubHeading">
         High School <BiSolidBusSchool />
-      </h2>
+      </h3>
       <div className="sectionBlock">
-        <h3 className="sectionBlockHeading">School Experience</h3>
+        <h4 className="sectionBlockHeading">School Experience</h4>
         <p>
           I attended Fairmont High School, where I was first exposed to software
           development through Information Technology. From then, I always knew I

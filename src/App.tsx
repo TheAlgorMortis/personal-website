@@ -25,7 +25,7 @@ function App() {
             {/* redirect /skills -> /skills/skills */}
             <Route
               path="/skills"
-              element={<Navigate to="/skills/skills" replace />}
+              element={<Navigate to="/skills/skills/technical" replace />}
             />
 
             {/* /skills/[skills|experience][/category[/detail]] */}

@@ -64,6 +64,17 @@ const componentMap = {
   SNAKE: VscSnake,
 };
 
+/* Map for heading for skill and experience categories, primarily because I
+ * didn't factor it into the json file */
+const catMap = {
+  technical: "Technical Skills",
+  soft: "Soft Skills",
+  "personal-tech-experience": "Personal Tech Experience",
+  "university-projects": "University Projects",
+  "non-tech-endeavors": "Non-tech Endeavors",
+  "leadership-roles": "Leadership Roles",
+};
+
 /************************
  * Setting up skill types
  ***********************/
@@ -153,7 +164,7 @@ export default function Skills() {
           <h2 className="sectionHeading"> Experience </h2>
           <button
             className="outerButton"
-            onClick={() => navigate("/skills/skills")}
+            onClick={() => navigate("/skills/skills/technical")}
           >
             Switch to Skills
           </button>
@@ -165,7 +176,9 @@ export default function Skills() {
           <h2 className="sectionHeading"> Skills </h2>
           <button
             className="outerButton"
-            onClick={() => navigate("/skills/experience")}
+            onClick={() =>
+              navigate("/skills/experience/personal-tech-experience")
+            }
           >
             Switch to Experience
           </button>
@@ -181,19 +194,15 @@ export default function Skills() {
    * @param tab Skills or Experience tab
    * @param category Category within the tab
    */
-  const getCategories = (
-    tab: "skills" | "experience",
-    category: string | undefined,
-  ) => {
-    //  TODO: change the colour on category match and style this
+  const getCategories = (tab: "skills" | "experience") => {
     return (
-      <div>
+      <div className="flexRow">
         {Object.keys(skills[tab] ?? {}).map((cat: string) => (
           <button
             className="outerButton"
             onClick={() => navigate(`/skills/${tab}/${cat}`)}
           >
-            {cat}
+            {catMap[cat]}
           </button>
         ))}
       </div>
@@ -202,18 +211,37 @@ export default function Skills() {
 
   return (
     <>
-      <p className="sectionBlock">
-        {tab} {category} {detail}
-      </p>
       {/* control bar */}
       {getControlBar(tab)}
       {/* category select */}
-      {getCategories(tab, category)}
-      {category &&
-        tab &&
-        skills[tab][category].map((entry: SkillItem) => (
-          <SePreview tab={tab} category={category} skill={entry} />
-        ))}
+      <div className="sectionBlock">
+        {getCategories(tab)}
+        {category && tab && (
+          <>
+            {detail &&
+              skills[tab][category].map((entry: SkillItem) => {
+                if (detail === entry.id) {
+                  return (
+                    <Se
+                      tab={tab}
+                      category={category}
+                      skill={entry}
+                      expanded={detail === entry.id}
+                    />
+                  );
+                }
+              })}
+            <h3 className="sectionSubHeading">{catMap[category]}</h3>
+            <div className="skillSet">
+              {skills[tab][category].map((entry: SkillItem) => {
+                if (entry.id !== detail) {
+                  return <Se tab={tab} category={category} skill={entry} />;
+                }
+              })}
+            </div>
+          </>
+        )}
+      </div>
     </>
   );
 }
@@ -222,16 +250,17 @@ export default function Skills() {
  * Skills and Experience previews and infos
  ******************************************/
 
-type SePreviewProps = {
+type SeProps = {
   tab: string;
   category: string;
   skill: SkillItem;
+  expanded: boolean;
 };
 
 /*
  * A skill preview
  */
-function SePreview({ tab, category, skill }: SePreviewProps) {
+function Se({ tab, category, skill, expanded }: SeProps) {
   const Icon =
     "icon" in skill
       ? componentMap[skill.icon as keyof typeof componentMap]
@@ -247,7 +276,7 @@ function SePreview({ tab, category, skill }: SePreviewProps) {
       </h3>
       {skill.timeframe == "" || <h4>{skill.timeframe}</h4>}
       {skill.brief && <p className="sectionBlock">{skill.brief}</p>}
-      {hasPoints && (
+      {hasPoints && !expanded && (
         <button
           className="outerButton"
           onClick={() => navigate(`/skills/${tab}/${category}/${skill.id}`)}
@@ -255,6 +284,71 @@ function SePreview({ tab, category, skill }: SePreviewProps) {
           More
         </button>
       )}
+      {expanded && (
+        <div>
+          {/** Points from the SE*/}
+          {(skill.points ?? []).map((point, idx) => {
+            if (isPointText(point))
+              return <SeText key={`t-${idx}`} pointText={point} />;
+            if (isPointLink(point))
+              return <SeLink key={`l-${idx}`} pointLink={point} />;
+            /* if (isPointImage(point)) */
+            /*   return <SeImage key={`i-${idx}`} pointImage={point} />; */
+            return null;
+          })}
+          {/** Button to navigate back */}
+          <button
+            className="outerButton"
+            onClick={() => {
+              navigate(-1);
+            }}
+          >
+            Back
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/**
+ * Text Point Props
+ */
+type SeTextProps = {
+  pointText: PointText;
+};
+
+/**
+ * Text Point
+ */
+function SeText({ pointText }: SeTextProps) {
+  return (
+    <div className="sectionBlock">
+      <p> {pointText.text} </p>
+    </div>
+  );
+}
+
+/**
+ * Link Point
+ */
+type SeLinkProps = {
+  pointLink: PointLink;
+};
+
+/**
+ * Link Point
+ */
+function SeLink({ pointLink }: SeLinkProps) {
+  const caption = pointLink.name || pointLink.link;
+  const Icon =
+    "icon" in pointLink
+      ? componentMap[pointLink.icon as keyof typeof componentMap]
+      : null;
+  return (
+    <div className="sectionBlock">
+      {Icon && <Icon />}
+      <a href={pointLink.link}>{caption}</a>
     </div>
   );
 }
