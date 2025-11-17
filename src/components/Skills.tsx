@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import skills from "../assets/skills.json";
+import skillsData from "../assets/skills.json";
+const skills = skillsData as any;
 import "./Bodies.css";
 import { useParams, useNavigate } from "react-router-dom";
 
@@ -36,7 +36,7 @@ import { FaVideo } from "react-icons/fa";
 import { VscSnake } from "react-icons/vsc";
 
 /* Icon map for skills */
-const componentMap = {
+const componentMap: Record<any, any> = {
   PYTHON: FaPython,
   JAVA: FaJava,
   TS: SiTypescript,
@@ -66,7 +66,7 @@ const componentMap = {
 
 /* Map for heading for skill and experience categories, primarily because I
  * didn't factor it into the json file */
-const catMap = {
+const catMap: Record<string, string> = {
   technical: "Technical Skills",
   soft: "Soft Skills",
   "personal-tech-experience": "Personal Tech Experience",
@@ -235,7 +235,14 @@ export default function Skills() {
             <div className="skillSet">
               {skills[tab][category].map((entry: SkillItem) => {
                 if (entry.id !== detail) {
-                  return <Se tab={tab} category={category} skill={entry} />;
+                  return (
+                    <Se
+                      tab={tab}
+                      category={category}
+                      skill={entry}
+                      expanded={false}
+                    />
+                  );
                 }
               })}
             </div>
