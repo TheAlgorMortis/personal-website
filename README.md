@@ -49,11 +49,3 @@ personal-website/                   # all source code lives here
 ### Prerequisites
 
 - Node.js (LTS) and npm installed on Ubuntu.
-
-### Commands
-
-- `make install` — installs dependencies.
-- `make dev` — starts the Vite dev server at http://localhost:5173.
-- `make build` — builds the production bundle to `dist/`.
-- `make preview` — serves the built app at http://localhost:4173.
-- `make clean` — removes `dist/` and `node_modules/`.
