@@ -33,7 +33,7 @@ export default function Home() {
           or entertain others. I am enthusiastic, buoyant, and optimistic, with
           relentless determination and ambition. I am reliable and responsible,
           and I care deeply about others. I aim to work towards a green and
-          progressive future.{" "}
+          progressive future.
         </p>
       </div>
       <div className="sectionBlock">

@@ -46,7 +46,7 @@
       { "name": "Godot",
         "id": "godot",
         "timeframe": "Since 2023",
-        "body": "Primary tool I use for game dev.",
+        "brief": "Primary tool I use for game dev.",
         "icon": "GODOT" },
 
       { "name": "Pixel Art Animation",
@@ -88,16 +88,18 @@
         "points":[
           {"text":"Dylan Swarts and I participated against 7 other teams in the SUDS Hackathon of 2025. The theme was to build something that would improve student life. Swarts and I (as a team called \"Dylan Squared\" since we are both called Dylan) developed a full-stack system called \" Maroonut\", a digitized version of the Stellenbosch University's Faculty yearbook. We built this system over a 38 period period from Friday, 3 October at 20:00 (Right after writing a 3rd year maths exam) to Sunday, 5 October at 10:00. The full implementation and detailed README can be found at Github via the link below."},
           {"name":"Check out Maroonut on Github", "link":"https://github.com/TheAlgorMortis/suds-hackathon-2025", "icon":"GIT"},
-          {"name":"Check out the website of my teammate, Dylan Swarts", "link":"https://straws11.github.io/", "icon":"TEAMWORK"}
+          {"name":"Check out the website of my teammate, Dylan Swarts", "link":"https://straws11.github.io/", "icon":"TEAMWORK"},
+          {"src":"maroonut/home.png","caption":"When you first arrive at maroonut, you will land on the home page, detailing the purpose and functionality of the service."},
+          {"text":"Maroonut uses React Router, so you can bookmark any page and share links to certain modules directly."},
+          {"src":"maroonut/login.png","caption":"You can log in to your own account, which allows you to view modules, post reviews on modules you've already completed, and even advertise yourself as a tutor for specific modules."},
+          {"text":"Note that user authentication was not fully implented as it was not the focus during our short timeframe, but future versions would likely authenticate via Stellenbosch's existing database."},
+          {"src":"maroonut/modules.png","caption":"Once logged in, you can view all modules and even search for modules based on search terms to find what you're looking for."},
+          {"src":"maroonut/module.png","caption":"Every module has a dedicated page with the module's framework, lecture and tutorial hours, and the module's pre- and corequistes, which also act as buttons to direct you to those modules. The module rating is based off of an average of all reviewer's ratings of the module."},
+          {"src":"maroonut/reviews.png","caption":"Scrolling further down, you can view reviews for the module by people who have taken it in the past. This allows you to guage more about the module than a module framework allows, as you hear students' real world experience with the module to better advise you. If you've passed a module, you can give your own review on it, and rate it by clicking on the stars. Users can also gift and revoke 'acorns' to and from the review. Reviews are sorted descendingly by acorns so that the best reviews stay at the top."},
+          {"src":"maroonut/tutors.png","caption":"You can also see users who are tutoring for the module, showing a brief description of each tutor's service and their rate, as well as buttons to contact them via email and visit their profiles."},
+          {"src":"maroonut/profile.png","caption":"On a user's profile page, you can see how many acorns they've been gifted over reviews, modules taken and their outcomes, and modules they've reviewed or are tutoring for."}
         ]
-
       },
-
-      { "name": "Investec Tech Scholarship Mentorship",
-        "id":"investec",
-        "timeframe": "2024-present",
-        "brief": "At the end of my first year I was awarded a full cost scholarship with Investec which has funded me since my second year. After my honours, I will then be able to go work for them. During the scholarship I have networked with many people at the company and have learned a lot about industry from them.",
-        "icon": "INVEST" },
 
       { "name": "Standard Bank Hackathon",
         "id": "lab-hackathon",
@@ -105,10 +107,16 @@
         "brief": "Performed behavioural segmentation on taxi drivers.",
         "icon": "TAXI" },
 
+      { "name": "Investec Tech Scholarship Mentorship",
+        "id":"investec",
+        "timeframe": "2024-present",
+        "brief": "At the end of my first year I was awarded a full cost scholarship with Investec which has funded me since my second year. After my honours, I will then be able to go work for them. During the scholarship I have networked with many people at the company and have learned a lot about industry from them.",
+        "icon": "INVEST" },
+
       { "name": "Godot Game 'Collabyrinth'",
         "id":"collabyrinth",
         "timeframe": "2024-present",
-        "body": "I built a maze game in Godot 4. Check the README in the repo linked below.",
+        "brief": "I built a maze game in Godot 4. Check the README in the repo linked below.",
         "icon":"GODOT",
         "points":[
           {"text": "Collabyrinth is a continuous passion-project that I incrementally develop to hone my skills in game-development before I tackle my first ambitious long-term project."},
@@ -189,7 +197,7 @@
       { "name": "Air Race and Obstacle Chess Games",
         "id":"python-games",
         "timeframe": "2023",
-        "body": "Games made in python, both with primative GUIs.",
+        "brief": "Games made in python, both with primative GUIs.",
         "icon": "PYTHON" }
     ],
 
@@ -228,7 +236,7 @@
       { "name": "Co-writer and Director of a One Act Play at Fairmont High",
         "id":"erase-and-rewind",
         "timeframe": "2022",
-        "breif": "I co-wrote and directed a 20-minute comedy play called 'Erase and Rewind' about a man who goes back in time to have reverse-hand-dryers removed from his childhood school, to prevent his life from being ruined. During his adventure, he loses his time machine, which appears like a tv remote. Two children find it and cause chaos with it, like pausing time, changing the languages of their friends, and reversing time. We won a silver award for it at a ceremony called 'Silwervaring Kunstefees.'",
+        "brief": "I co-wrote and directed a 20-minute comedy play called 'Erase and Rewind' about a man who goes back in time to have reverse-hand-dryers removed from his childhood school, to prevent his life from being ruined. During his adventure, he loses his time machine, which appears like a tv remote. Two children find it and cause chaos with it, like pausing time, changing the languages of their friends, and reversing time. We won a silver award for it at a ceremony called 'Silwervaring Kunstefees.'",
         "icon": "ART" }
     ]
   }

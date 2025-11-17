@@ -296,8 +296,8 @@ function Se({ tab, category, skill, expanded }: SeProps) {
               return <SeText key={`t-${idx}`} pointText={point} />;
             if (isPointLink(point))
               return <SeLink key={`l-${idx}`} pointLink={point} />;
-            /* if (isPointImage(point)) */
-            /*   return <SeImage key={`i-${idx}`} pointImage={point} />; */
+            if (isPointImage(point))
+              return <SeImage key={`i-${idx}`} pointImage={point} />;
             return null;
           })}
           {/** Button to navigate back */}
@@ -334,7 +334,7 @@ function SeText({ pointText }: SeTextProps) {
 }
 
 /**
- * Link Point
+ * Link Point Props
  */
 type SeLinkProps = {
   pointLink: PointLink;
@@ -355,6 +355,30 @@ function SeLink({ pointLink }: SeLinkProps) {
         {Icon && <Icon />}
         {caption}
       </a>
+    </div>
+  );
+}
+
+/**
+ * Image point props
+ */
+type SeImageProps = {
+  pointImage: PointImage;
+};
+
+/**
+ * Image Point
+ */
+function SeImage({ pointImage }: SeImageProps) {
+  const caption = pointImage.caption || null;
+  return (
+    <div className="sectionBlock">
+      {caption && (
+        <div className="skillBlock">
+          <p>{caption}</p>
+        </div>
+      )}
+      <img className="blogPicture" src={`/${pointImage.src}`} />
     </div>
   );
 }

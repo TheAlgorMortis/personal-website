@@ -1,4 +1,5 @@
 ## Dylan Reid's personal website
+
 This project is a personal website for Dylan James Reid.
 
 It has sections that display my profile, education, skills, and experience. You
@@ -6,7 +7,6 @@ can also log in to post on a blog forum, that anyone can view when logged out.
 
 The website features dark mode, responsive design, links to other sites, and a
 button to download my CV.
-
 
 ## Directory structure
 
@@ -44,16 +44,16 @@ personal-website/                   # all source code lives here
     └── assets/          # default blog images, profile picture and json files
 ```
 
-
 ## Project Setup for local testing
 
 ### Prerequisites
+
 - Node.js (LTS) and npm installed on Ubuntu.
 
 ### Commands
+
 - `make install` — installs dependencies.
 - `make dev` — starts the Vite dev server at http://localhost:5173.
 - `make build` — builds the production bundle to `dist/`.
 - `make preview` — serves the built app at http://localhost:4173.
 - `make clean` — removes `dist/` and `node_modules/`.
-
