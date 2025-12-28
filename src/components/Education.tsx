@@ -86,11 +86,11 @@ export default function Education() {
       <div className="sectionBlock">
         <h4 className="sectionBlockHeading">University Experience</h4>
         <p>
-          I am attending Stellenbosch University and am currently studying the
-          third year of my BSc Computer Science degree. Here, I have learned
-          many skills that can be viewed on the Skills/Experience section of the
-          website. Below I list the modules that I have done during the course,
-          and their respective marks.{" "}
+          I currently hold a BSc Computer science (cum laude) from Stellenbosch
+          university. In 2026 I am studying my Honours in Computer Science.
+          Throughout my bachelors, I learned many skills that can be viewed on
+          the Skills/Experience section of the website. Below I list the modules
+          that I have done during the course, and their respective marks.
         </p>
         <p>
           During my studies, I was awarded a full cost scholarship by Investec
@@ -114,6 +114,22 @@ export default function Education() {
         marks1={fullMarks.year1sem1}
         marks2={fullMarks.year1sem2}
       />
+      <a
+        className="outerButton"
+        href="./AcademicRecord.pdf"
+        download="Academic-Record-Dylan-Reid"
+      >
+        <h2>
+          <FaFileDownload />
+        </h2>
+        <h2> Download my Academic Record </h2>
+      </a>
+      <a className="outerButton" href="./BSC.pdf" download="BSC-Dylan-Reid">
+        <h2>
+          <FaFileDownload />
+        </h2>
+        <h2> Download my BSc Certificate </h2>
+      </a>
       <h3 className="sectionSubHeading">
         High School <BiSolidBusSchool />
       </h3>

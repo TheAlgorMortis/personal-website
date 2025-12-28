@@ -26,10 +26,10 @@
 	 {"id": 20, "name": "CompSci 315 (Machine Learning)", "mark": "71%", "icon":"ML"},
 	 {"id": 21, "name": "Applied Maths 314 (Discrete Maths)", "mark": "83%", "icon":"AMD"}],
 "year3sem2":
-	[{"id": 22, "name": "CompSci 343 (Webdev and Databases)", "mark": "TBA", "icon":"WEB"},
-	 {"id": 23, "name": "CompSci 344 (Software Engineering)", "mark": "TBA", "icon":"SE"},
-	 {"id": 24, "name": "CompSci 345 (Automata and Computability)", "mark": "TBA","icon":"AUTO"},
-	 {"id": 35, "name": "Applied Maths 364 (Fourier Analysis)", "mark":"TBA","icon":"FOU"}],
+	[{"id": 22, "name": "CompSci 343 (Webdev and Databases)", "mark": "90%", "icon":"WEB"},
+	 {"id": 23, "name": "CompSci 344 (Software Engineering)", "mark": "76%", "icon":"SE"},
+	 {"id": 24, "name": "CompSci 345 (Automata and Computability)", "mark": "95%","icon":"AUTO"},
+	 {"id": 35, "name": "Applied Maths 364 (Fourier Analysis)", "mark":"75%","icon":"FOU"}],
 "NSC":
 	[{"id": 101, "name": "English Home Language", "mark": "89%","icon":"ENG"},
 	 {"id": 102, "name": "Afrikaans First Additional language", "mark": "86%","icon":"AFR"},
